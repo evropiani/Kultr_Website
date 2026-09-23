@@ -1,0 +1,71 @@
+name: Deploy kultr.cc
+
+# Publishes site/ to GitHub Pages on every push to main. The site is plain
+# HTML, CSS and JS, so there is no build: check the links, upload, deploy.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Never let two deploys race; always finish the one in flight.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Check and package
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Every local link resolves
+        run: node scripts/check.mjs
+
+      - uses: actions/configure-pages@v5
+        with:
+          # Creates the Pages site if there is not one yet. If the token is
+          # not allowed to, this fails with a clear message: turn Pages on
+          # once under Settings -> Pages -> Source -> GitHub Actions.
+          enablement: true
+
+      - name: Point Pages at kultr.cc
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # With an Actions deploy, GitHub ignores the CNAME file; the domain
+          # lives in the Pages settings. Set it if it is not already, and say
+          # how to do it by hand if this token is not allowed to.
+          CURRENT="$(gh api "repos/$GITHUB_REPOSITORY/pages" --jq '.cname // ""' 2>/dev/null || true)"
+          if [ "$CURRENT" = "kultr.cc" ]; then
+            echo "Custom domain is already kultr.cc."
+          elif gh api -X PUT "repos/$GITHUB_REPOSITORY/pages" -f cname=kultr.cc >/dev/null 2>&1; then
+            echo "::notice::Custom domain set to kultr.cc."
+          else
+            echo "::warning::Could not set the custom domain (currently '${CURRENT:-none}'). Set it once under Settings -> Pages -> Custom domain -> kultr.cc."
+          fi
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Kultr — a Navidrome client that mixes like a DJ</title>
+    <meta name="description" content="Kultr is a modern, minimalist client for Navidrome. It mirrors your whole library locally, crossfades on two real decks, and beat-matches one track into the next. For the web and Android." />
+    <link rel="canonical" href="https://kultr.cc/" />
+    <meta name="theme-color" content="#08080c" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Kultr" />
+    <meta property="og:url" content="https://kultr.cc/" />
+    <meta property="og:title" content="Kultr — your library, mixed like a DJ" />
+    <meta property="og:description" content="A modern, minimalist Navidrome client. Mirrors your whole library locally, crossfades on two real decks, and beat-matches one track into the next." />
+    <meta property="og:image" content="https://kultr.cc/assets/img/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script>document.documentElement.classList.add('js')</script>
+    <link rel="stylesheet" href="assets/css/site.css" />
+    <script src="assets/js/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="backdrop" aria-hidden="true"><div class="backdrop-layer"></div><div class="backdrop-layer"></div></div>
+
+    <header class="nav wrap">
+      <div class="nav-bar glass">
+        <a class="brand" href="./" aria-label="Kultr, home"><img src="assets/img/logo-128.webp" alt="" width="30" height="30" />Kultr</a>
+        <ul class="nav-links">
+          <li><a href="features.html">Features</a></li>
+          <li><a href="#injekt">InjeKt</a></li>
+          <li><a href="#look">Screenshots</a></li>
+          <li><a href="#get">Get Kultr</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a class="nav-icon" href="https://github.com/evropiani/Kultr" aria-label="Kultr on GitHub"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#github"></use></svg></a>
+          <a class="nav-icon" href="https://discord.com/users/319246364246540288" aria-label="Talk to the developer on Discord"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#discord"></use></svg></a>
+          <a class="btn btn-primary btn-sm" href="https://web.kultr.cc/">Open the app</a>
+          <button class="nav-icon nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#menu"></use></svg></button>
+        </div>
+      </div>
+      <nav class="nav-menu glass" id="nav-menu" aria-label="Site">
+        <a href="features.html"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#layout-grid"></use></svg>Features</a>
+        <a href="#injekt"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#sparkles"></use></svg>InjeKt</a>
+        <a href="#look"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#monitor"></use></svg>Screenshots</a>
+        <a href="#get"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#download"></use></svg>Get Kultr</a>
+        <a href="https://github.com/evropiani/Kultr"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#github"></use></svg>GitHub</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- ============================================================ hero -->
+      <section class="hero">
+        <div class="wrap hero-grid">
+          <div class="hero-copy">
+            <img class="hero-mark" src="assets/img/logo-256.webp" alt="" width="84" height="84" />
+            <p class="eyebrow">For Navidrome &middot; web and Android</p>
+            <h1>
+              <span class="chrome">Your library,</span>
+              <span class="tinted">mixed like a DJ.</span>
+            </h1>
+            <p class="hero-lede">
+              Kultr is a modern, minimalist client for <strong>Navidrome</strong>. It mirrors your whole library
+              locally, crossfades on two real decks, and beat-matches one track into the next.
+            </p>
+            <div class="hero-ctas">
+              <a class="btn btn-primary" href="https://web.kultr.cc/"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#play"></use></svg>Try it in your browser</a>
+              <a class="btn" href="https://github.com/evropiani/Kultr_Android/releases/latest"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#smartphone"></use></svg>Get the Android app</a>
+            </div>
+            <p class="hero-note">
+              <span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#shield-check"></use></svg>No account, no tracking</span>
+              <span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#code"></use></svg>Open source, Apache 2.0</span>
+              <span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#container"></use></svg>Self-host in a minute</span>
+            </p>
+          </div>
+
+          <div>
+            <div class="player glass" data-player data-injekt="on" role="region" aria-label="A working demo of Kultr's player">
+              <div class="art-wrap">
+                <div class="art-stack" aria-hidden="true"><div class="art cover"></div><div class="art cover"></div></div>
+                <div class="art-top">
+                  <span class="player-label"><span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>Now playing</span>
+                  <button class="injekt-toggle" type="button" aria-pressed="true" title="Toggle InjeKt (D in the app)"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#sparkles"></use></svg> InjeKt on</button>
+                </div>
+              </div>
+              <div class="player-meta swap">
+                <div class="player-title">Re-entry</div>
+                <div class="player-sub">Nocturne Machine &mdash; Low Orbit</div>
+                <div class="player-chips"></div>
+              </div>
+              <div class="progress">
+                <span data-now>0:14</span>
+                <div class="track" aria-hidden="true"><div class="track-fill"></div><div class="track-outro"></div></div>
+                <span data-total>0:30</span>
+              </div>
+              <div class="controls">
+                <span class="ctl ctl-dim" aria-hidden="true"><svg class="icon"><use href="assets/icons.svg#shuffle"></use></svg></span>
+                <button class="ctl" type="button" data-prev aria-label="Previous track"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#skip-back"></use></svg></button>
+                <button class="ctl ctl-play" type="button" data-play aria-label="Play"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#play"></use></svg></button>
+                <button class="ctl" type="button" data-next aria-label="Next track"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#skip-forward"></use></svg></button>
+                <span class="ctl ctl-dim" aria-hidden="true"><svg class="icon"><use href="assets/icons.svg#repeat"></use></svg></span>
+              </div>
+              <div class="plan">
+                <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#sparkles"></use></svg>
+                <div><div class="plan-head">Up next</div><div class="plan-detail">&nbsp;</div></div>
+              </div>
+              <p class="sr-only" data-live aria-live="polite"></p>
+            </div>
+            <p class="player-caption">A working demo. Wait for the blend or press next &mdash; this whole page takes its colour from the cover, the way the app does.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================== screenshots -->
+      <section class="section section-tight" id="look" aria-labelledby="look-title">
+        <div class="wrap" data-shots>
+          <div class="section-head center" data-reveal>
+            <p class="eyebrow">A look at it</p>
+            <h2 id="look-title">Glass, and whatever colour the music is.</h2>
+          </div>
+          <div class="shots-tabs glass" role="tablist" aria-label="Screenshots">
+            <button class="shots-tab" type="button" role="tab" id="tab-1" aria-controls="shots-panel" aria-selected="true" data-title="Your library, mirrored locally." data-text="Browsing is instant because nothing is fetched to draw it.">Library</button>
+            <button class="shots-tab" type="button" role="tab" id="tab-2" aria-controls="shots-panel" aria-selected="false" tabindex="-1" data-title="An album, playing." data-text="The whole interface takes its colour from the artwork.">Album</button>
+            <button class="shots-tab" type="button" role="tab" id="tab-3" aria-controls="shots-panel" aria-selected="false" tabindex="-1" data-title="InjeKt, showing its working." data-text="Tempo, key, energy and the exact plan for the hand-over.">InjeKt</button>
+            <button class="shots-tab" type="button" role="tab" id="tab-4" aria-controls="shots-panel" aria-selected="false" tabindex="-1" data-title="Make it yours." data-text="Accent colour, borders, corner style, and six playhead designs that preview themselves.">Appearance</button>
+            <button class="shots-tab" type="button" role="tab" id="tab-5" aria-controls="shots-panel" aria-selected="false" tabindex="-1" data-title="Choose your home page." data-text="Fifteen shelves, switched on and off and put in the order you want.">Home shelves</button>
+            <button class="shots-tab" type="button" role="tab" id="tab-6" aria-controls="shots-panel" aria-selected="false" tabindex="-1" data-title="And here it is." data-text="Empty shelves are skipped, so it never looks half-finished.">Home</button>
+            <button class="shots-tab" type="button" role="tab" id="tab-7" aria-controls="shots-panel" aria-selected="false" tabindex="-1" data-title="Light theme." data-text="The same cut-out mark reads on either background.">Light</button>
+            <button class="shots-tab" type="button" role="tab" id="tab-8" aria-controls="shots-panel" aria-selected="false" tabindex="-1" data-title="One screen to connect." data-text="Name the server, or let it use its address.">Sign in</button>
+          </div>
+          <div class="shots-frame glass" data-reveal>
+            <div class="shots-glow" aria-hidden="true"></div>
+            <div class="shots-view" id="shots-panel" role="tabpanel" aria-live="polite">
+              <img class="is-on" src="assets/img/screens/albums.webp" width="1280" height="800" alt="The albums grid in Kultr, with a sidebar and a player bar in glass." />
+              <img src="assets/img/screens/album.webp" width="1280" height="800" loading="lazy" alt="An album page, tinted amber by its cover, with the track playing." />
+              <img src="assets/img/screens/injekt.webp" width="1280" height="800" loading="lazy" alt="The full-screen player's InjeKt tab: BPM, key, energy, intro and outro for both tracks, and the transition plan." />
+              <img src="assets/img/screens/settings.webp" width="1280" height="800" loading="lazy" alt="Appearance settings: corners, six playhead styles, count time down, grid size." />
+              <img src="assets/img/screens/home-settings.webp" width="1280" height="800" loading="lazy" alt="Settings for choosing and ordering the home page shelves." />
+              <img src="assets/img/screens/home.webp" width="1280" height="800" loading="lazy" alt="The home page, greeting with Good afternoon and a Played the most shelf." />
+              <img src="assets/img/screens/albums-light.webp" width="1280" height="800" loading="lazy" alt="The albums grid in the light theme." />
+              <img src="assets/img/screens/login.webp" width="1280" height="800" loading="lazy" alt="The sign-in screen, with fields for the server, username and password." />
+            </div>
+          </div>
+          <p class="shots-caption"><strong data-cap-title>Your library, mirrored locally.</strong> <span data-cap-text>Browsing is instant because nothing is fetched to draw it.</span></p>
+        </div>
+      </section>
+
+      <!-- ====================================================== what it does -->
+      <section class="section" id="what" aria-labelledby="what-title">
+        <div class="wrap">
+          <div class="section-head" data-reveal>
+            <p class="eyebrow">What it does</p>
+            <h2 id="what-title"><span class="chrome">Fast because it&rsquo;s local.</span><br />Smooth because it&rsquo;s two decks.</h2>
+            <p>
+              Kultr keeps a copy of your library on the device, so no page waits on the server to draw. And every
+              track plays on one of two decks, so a transition is a real overlap, not a volume trick.
+            </p>
+          </div>
+
+          <div class="bento">
+            <article class="tile glass xwide" data-reveal>
+              <span class="tile-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#database"></use></svg></span>
+              <h3>Your whole library, mirrored</h3>
+              <p>
+                One button copies every artist, album, track, playlist and genre to the device. Browsing, sorting and
+                searching are then instant, and keep working with the server switched off. After that, a check pulls
+                in only what moved &mdash; on start-up, hourly, or when you ask.
+              </p>
+              <div class="tile-foot tile-list">
+                <span class="chip">Instant search</span><span class="chip">Works offline</span><span class="chip">Incremental</span>
+              </div>
+            </article>
+            <article class="tile glass" data-reveal>
+              <span class="tile-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#layers"></use></svg></span>
+              <h3>Crossfade that isn&rsquo;t a trick</h3>
+              <p>Two players genuinely overlap, for up to 20 seconds, in four fade shapes. Or switch it off for gapless: the next track starts the instant this one ends.</p>
+            </article>
+
+            <article class="tile glass" data-reveal>
+              <span class="tile-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#sparkles"></use></svg></span>
+              <h3>InjeKt</h3>
+              <p>Beat-matched, key-aware transitions, planned from each track&rsquo;s tempo, key, energy and structure.</p>
+              <div class="tile-foot"><a class="link-arrow" href="#injekt">How it mixes<svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-right"></use></svg></a></div>
+            </article>
+            <article class="tile glass" data-reveal>
+              <span class="tile-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#folder-down"></use></svg></span>
+              <h3>Offline, with real filenames</h3>
+              <p>A sync button on every page. Downloads go into the browser, or a folder you pick, named <code>Artist - Album - Track</code>.</p>
+            </article>
+            <article class="tile glass" data-reveal>
+              <span class="tile-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#server"></use></svg></span>
+              <h3>As many servers as you like</h3>
+              <p>Give each one a name, switch between them, and turn one off without deleting it.</p>
+            </article>
+
+            <article class="tile glass wide" data-reveal>
+              <span class="tile-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#palette"></use></svg></span>
+              <h3>Colour from the cover</h3>
+              <p>
+                The surfaces, the highlights and the backdrop all retint from whatever is playing. Then make it
+                yours: light or dark, three corner styles, six playheads, an accent blended with the artwork&rsquo;s,
+                and a box for your own CSS.
+              </p>
+            </article>
+            <article class="tile glass wide" data-reveal>
+              <span class="tile-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#list-music"></use></svg></span>
+              <h3>And everything you&rsquo;d expect</h3>
+              <div class="tile-list">
+                <span class="chip">10-band equaliser</span><span class="chip">ReplayGain</span><span class="chip">Synced lyrics</span><span class="chip">Scrobbling</span><span class="chip">Sleep timer</span><span class="chip">Internet radio</span><span class="chip">Listening stats</span><span class="chip">Chromecast &amp; AirPlay</span><span class="chip">Keyboard shortcuts</span><span class="chip">Ratings</span><span class="chip">Playlists</span>
+              </div>
+              <div class="tile-foot"><a class="link-arrow" href="features.html">Every feature<svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-right"></use></svg></a></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ InjeKt -->
+      <section class="section" id="injekt" aria-labelledby="injekt-title">
+        <div class="wrap">
+          <div class="section-head" data-reveal>
+            <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#sparkles"></use></svg>InjeKt</p>
+            <h2 id="injekt-title">It doesn&rsquo;t lay one track over the next. <span class="tinted">It injects it.</span></h2>
+            <p>
+              Kultr decodes each track once and measures it: tempo and beat grid, musical key, loudness and brightness,
+              and where the intro ends and the outro begins. When one track is about to hand over, it plans the
+              transition from those numbers &mdash; and shows you the plan.
+            </p>
+          </div>
+
+          <div class="injekt-panel glass" data-reveal>
+            <div class="injekt-legend">
+              <div class="chips">
+                <span class="chip">Aurora I &middot; 126 BPM &middot; 8A</span>
+                <span class="chip chip-accent">Vanta II &middot; 118 BPM &middot; 8A</span>
+              </div>
+              <p class="injekt-readout">Beat-matched at <strong>122 BPM</strong> &mdash; this track down 3.2%, the next up 3.3%</p>
+            </div>
+            <div class="diagram-scroll">
+              <svg class="diagram" viewBox="0 0 1000 420" role="img" aria-labelledby="dg-title dg-desc" data-diagram>
+                <title id="dg-title">An InjeKt transition, from Aurora I into Vanta II</title>
+                <desc id="dg-desc">Aurora I, at 126 BPM, drifts down to 122 over its last eight bars before the blend. Vanta II enters on its first real downbeat, skipping its intro, sped up from 118 to 122 BPM. Through the blend the bar lines of both tracks line up, and halfway through the bass hands over from the old track to the new one. Afterwards Vanta II eases back to its own tempo.</desc>
+                <defs>
+                  <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                    <rect width="2" height="7" fill="rgba(255,255,255,0.08)" />
+                  </pattern>
+                </defs>
+
+                <rect x="260" y="62" width="180" height="96" rx="10" fill="rgba(255,255,255,0.035)" />
+                <rect x="440" y="62" width="260" height="242" rx="12" class="accent-stroke" fill="rgba(255,255,255,0.03)" stroke-opacity="0.45" stroke-dasharray="5 6" />
+                <rect x="300" y="208" width="140" height="96" rx="10" fill="url(#hatch)" />
+
+                <g stroke="rgba(255,255,255,0.09)">
+                  <line x1="472.5" y1="66" x2="472.5" y2="300" />
+                  <line x1="505" y1="66" x2="505" y2="300" />
+                  <line x1="537.5" y1="66" x2="537.5" y2="300" />
+                  <line x1="602.5" y1="66" x2="602.5" y2="300" />
+                  <line x1="635" y1="66" x2="635" y2="300" />
+                  <line x1="667.5" y1="66" x2="667.5" y2="300" />
+                </g>
+
+                <text class="lbl" x="350" y="28" text-anchor="middle">Tempo drift &middot; 8 bars</text>
+                <path d="M262 40H438" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" />
+                <text class="lbl accent-fill" x="570" y="28" text-anchor="middle">Blend &middot; 7.2 s</text>
+                <path d="M442 40H698" class="accent-stroke" stroke-width="1.5" />
+
+                <text x="20" y="52"><tspan class="lbl">Outgoing</tspan><tspan class="ttl" dx="12">Aurora I</tspan><tspan class="num" dx="10">126 BPM &middot; 8A</tspan></text>
+                <text x="20" y="198"><tspan class="lbl">Incoming</tspan><tspan class="ttl" dx="12">Vanta II</tspan><tspan class="num" dx="10">118 BPM &middot; 8A</tspan></text>
+
+                <g data-waves></g>
+
+                <line x1="570" y1="58" x2="570" y2="308" class="accent-stroke" stroke-width="1.5" stroke-dasharray="3 5" />
+                <g transform="translate(570 180)">
+                  <rect x="-50" y="-13" width="100" height="26" rx="13" fill="#15151d" class="accent-stroke" stroke-opacity="0.6" />
+                  <text class="lbl accent-fill" y="4.5" text-anchor="middle">Bass swap</text>
+                </g>
+                <text class="lbl" x="370" y="326" text-anchor="middle">Intro skipped</text>
+
+                <text class="lbl" x="20" y="340">Tempo</text>
+                <path d="M20 355.4H260C350 355.4 350 377 440 377H700" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2.5" stroke-linecap="round" />
+                <path d="M440 377H700C790 377 790 398.6 880 398.6H980" fill="none" class="accent-stroke" stroke-width="2.5" stroke-linecap="round" />
+                <text class="num" x="236" y="347" text-anchor="end">126</text>
+                <text class="num" x="570" y="369" text-anchor="middle">122, shared</text>
+                <text class="num" x="980" y="390" text-anchor="end">118</text>
+
+                <g class="playhead">
+                  <line x1="20" y1="44" x2="20" y2="408" stroke="#fff" stroke-opacity="0.75" stroke-width="1.5" />
+                  <circle cx="20" cy="44" r="4" fill="#fff" />
+                </g>
+              </svg>
+            </div>
+            <p class="diagram-hint">Scroll sideways to see the whole transition.</p>
+          </div>
+
+          <div class="rules">
+            <article class="rule glass" data-reveal>
+              <h3><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#blend"></use></svg>Beat-matching, from both sides</h3>
+              <p>Rather than drag the new track onto the old one&rsquo;s tempo, it picks a tempo between them and moves both. Each side moves half as far, which is half as audible &mdash; and pairs a one-sided match would reject now work.</p>
+            </article>
+            <article class="rule glass" data-reveal>
+              <h3><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#audio-lines"></use></svg>Bar alignment</h3>
+              <p>The blend starts on a downbeat of the outgoing track and the incoming one enters on a downbeat of its own, so the grids actually line up.</p>
+            </article>
+            <article class="rule glass" data-reveal>
+              <h3><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#waves"></use></svg>Bass swap</h3>
+              <p>The outgoing bass rolls off before the incoming bass comes up, so two kick drums never fight.</p>
+            </article>
+            <article class="rule glass" data-reveal>
+              <h3><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#key-round"></use></svg>Harmonic mixing</h3>
+              <p>Keys are worked out in Camelot notation. When two clash, it filter-sweeps out of the old track instead of blending into a muddy chord.</p>
+            </article>
+            <article class="rule glass" data-reveal>
+              <h3><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#skip-forward"></use></svg>Intro skipping</h3>
+              <p>The next track comes in at its first real downbeat, not after twenty seconds of ambient pad.</p>
+            </article>
+            <article class="rule glass" data-reveal>
+              <h3><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#infinity"></use></svg>Auto-continuation</h3>
+              <p>When the queue runs out it keeps going, with tracks chosen by tempo, key and energy, so the set keeps flowing.</p>
+            </article>
+          </div>
+
+          <div class="injekt-foot" data-reveal>
+            <p>Every part degrades gracefully. No analysis yet, tempos too far apart, or no Web Audio &mdash; and it quietly becomes a good ordinary crossfade.</p>
+            <a class="link-arrow" href="https://github.com/evropiani/Kultr/blob/main/docs/INJEKT.md">The DSP and the mixing rules<svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-up-right"></use></svg></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================= get -->
+      <section class="section" id="get" aria-labelledby="get-title">
+        <div class="wrap">
+          <div class="section-head center" data-reveal>
+            <p class="eyebrow">Get Kultr</p>
+            <h2 id="get-title">The demo is the real app.</h2>
+            <p>
+              It runs entirely in your browser and connects to <em>your</em> Navidrome. It stores nothing, ships no
+              music and has no backend. Rather not trust a page on the internet with your password? Run it yourself
+              &mdash; it takes about a minute.
+            </p>
+          </div>
+
+          <div class="get">
+            <article class="get-card glass featured" data-reveal>
+              <div class="platforms"><span class="platform web">Web &middot; PWA</span></div>
+              <h3>In your browser</h3>
+              <p class="lede">Open it, sign in to your Navidrome, and press <strong>Sync my library</strong>. Install it from Chrome or Edge, or with Share &rarr; Add to Home Screen on iOS.</p>
+              <ul>
+                <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"></use></svg>Desktop, Android and iOS</li>
+                <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"></use></svg>Full-screen, and offline for anything downloaded</li>
+                <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"></use></svg>Chrome and Edge 111+, Firefox 113+, Safari 16.4+</li>
+              </ul>
+              <div class="actions">
+                <a class="btn btn-primary" href="https://web.kultr.cc/"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#play"></use></svg>Open web.kultr.cc</a>
+              </div>
+            </article>
+
+            <article class="get-card glass" data-reveal>
+              <div class="platforms"><span class="platform android">Android 8.0+</span></div>
+              <h3>On Android</h3>
+              <p class="lede">A proper Android music app with the same behaviour &mdash; crossfade, InjeKt, the library mirror &mdash; plus what only a native app can do.</p>
+              <ul>
+                <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"></use></svg>Background playback and a media notification</li>
+                <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"></use></svg>Lock-screen, Bluetooth and Android Auto</li>
+                <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"></use></svg>&ldquo;Play &hellip; on Kultr&rdquo; voice search</li>
+              </ul>
+              <details class="fingerprint">
+                <summary>Signing certificate fingerprint</summary>
+                <code>SHA-256 3C:26:16:4A:FD:6F:C1:30:F5:7D:A5:2B:4F:04:AB:2B:E8:3C:89:25:50:89:6F:C9:43:57:D2:E0:B8:51:6F:E0</code>
+              </details>
+              <div class="actions">
+                <a class="btn" href="https://github.com/evropiani/Kultr_Android/releases/latest"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#download"></use></svg>Download the APK</a>
+              </div>
+            </article>
+
+            <article class="get-card glass" data-reveal>
+              <div class="platforms"><span class="platform">Docker &middot; Node</span></div>
+              <h3>On your own server</h3>
+              <p class="lede">Already running Navidrome in Docker? Three commands, then open <code>localhost:4180</code> and leave the server field blank.</p>
+              <div class="term">
+                <div class="term-bar"><span>Terminal</span><button class="copy" type="button" data-copy="docker-cmds" aria-label="Copy commands"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#copy"></use></svg></button></div>
+                <pre class="code" id="docker-cmds"><span class="p">$ </span>git clone https://github.com/evropiani/Kultr.git
+<span class="p">$ </span>cd Kultr
+<span class="p">$ </span>docker compose up -d</pre>
+              </div>
+              <div class="actions">
+                <a class="btn" href="https://github.com/evropiani/Kultr/blob/main/docs/INSTALL.md"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#book-open"></use></svg>Install guide</a>
+              </div>
+            </article>
+          </div>
+          <p class="get-foot" data-reveal>
+            A native iOS app is planned; until then Kultr installs from Safari as a web app.
+            Settings exported from one Kultr open in the other. <a href="https://github.com/evropiani/Kultr/blob/main/CHANGELOG.md">What&rsquo;s new</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- ============================================================ data -->
+      <section class="section section-tight" id="privacy" aria-labelledby="data-title">
+        <div class="wrap">
+          <div class="data glass" data-reveal>
+            <div>
+              <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#shield-check"></use></svg>Your data</p>
+              <h2 id="data-title">It talks to one server. <span class="chrome">Yours.</span></h2>
+              <p class="data-lede">No analytics, no telemetry, no third-party requests, no fonts from anyone&rsquo;s CDN. This website keeps the same rule.</p>
+            </div>
+            <ul class="data-list">
+              <li><strong><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#lock"></use></svg>Your password stays yours</strong>Subsonic needs it to sign each request, so it&rsquo;s kept on the device and sent nowhere but your own server. On Android it&rsquo;s sealed with a key in the Keystore.</li>
+              <li><strong><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#database"></use></svg>The mirror lives with you</strong>The library, InjeKt analysis and listening history stay on the device. Settings &rarr; Reset Kultr erases the lot.</li>
+              <li><strong><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#folder-down"></use></svg>Downloads go where you say</strong>Inside the browser, or a folder you picked. A page can only write where you&rsquo;ve pointed it &mdash; by design.</li>
+              <li><strong><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#file-json"></use></svg>Backups leave secrets out</strong>Settings export to a small JSON file. Passwords and usernames are never in it, and servers only if you ask.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================== built -->
+      <section class="section section-tight" aria-labelledby="built-title">
+        <div class="wrap">
+          <div class="built glass" data-reveal>
+            <span class="built-mark"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#sparkles"></use></svg></span>
+            <div>
+              <h2 id="built-title">Vibecoded with Claude Code</h2>
+              <p>
+                Every part of Kultr &mdash; the Subsonic client, the two-deck audio engine, the tempo and key detection,
+                the interface, the tests and the install guides &mdash; was produced by prompting Claude Code rather
+                than typed by hand. It&rsquo;s a fair thing to disclose. So was this website.
+              </p>
+            </div>
+            <a class="btn" href="https://github.com/evropiani/Kultr#how-this-was-built"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#github"></use></svg>Read the source</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================= closing -->
+      <section class="section closing" aria-labelledby="closing-title">
+        <div class="wrap" data-reveal>
+          <h2 id="closing-title"><span class="chrome">Put something on.</span></h2>
+          <p>Open Kultr, point it at your Navidrome and press Sync my library. It only has to happen once.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="https://web.kultr.cc/"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#play"></use></svg>Try it in your browser</a>
+            <a class="btn" href="https://github.com/evropiani/Kultr_Android/releases/latest"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#smartphone"></use></svg>Get the Android app</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap">
+        <div class="footer-grid">
+          <div>
+            <a class="brand" href="./"><img src="assets/img/logo-128.webp" alt="" width="30" height="30" />Kultr</a>
+            <p class="footer-about">A modern, minimalist client for Navidrome, for the web and Android. Free and open source.</p>
+          </div>
+          <div>
+            <h4>Kultr</h4>
+            <ul>
+              <li><a href="features.html">Features</a></li>
+              <li><a href="#injekt">InjeKt</a></li>
+              <li><a href="#look">Screenshots</a></li>
+              <li><a href="https://web.kultr.cc/">Open the app</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Get it</h4>
+            <ul>
+              <li><a href="https://github.com/evropiani/Kultr_Android/releases/latest">Android APK</a></li>
+              <li><a href="https://github.com/evropiani/Kultr/blob/main/docs/INSTALL.md">Install guide</a></li>
+              <li><a href="https://github.com/evropiani/Kultr/blob/main/docs/FAQ.md">FAQ</a></li>
+              <li><a href="https://github.com/evropiani/Kultr/blob/main/CHANGELOG.md">Changelog</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Talk</h4>
+            <ul>
+              <li><a href="https://github.com/evropiani/Kultr"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#github"></use></svg>GitHub</a></li>
+              <li><a href="https://discord.com/users/319246364246540288"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#discord"></use></svg>@evropiani</a></li>
+              <li><a href="https://github.com/evropiani/Kultr/issues">Report a problem</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-base">
+          <span>&copy; 2026 Kultr &middot; Apache 2.0 &middot; Not affiliated with the Navidrome project.</span>
+          <span>No cookies. No analytics. No third-party requests.</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

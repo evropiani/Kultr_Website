@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Features — Kultr</title>
+    <meta name="description" content="Everything Kultr does: a local mirror of your Navidrome library, two-deck crossfade and gapless, InjeKt beat-matched mixing, offline sync, many servers, a native Android app and more." />
+    <link rel="canonical" href="https://kultr.cc/features.html" />
+    <meta name="theme-color" content="#08080c" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Kultr" />
+    <meta property="og:url" content="https://kultr.cc/features.html" />
+    <meta property="og:title" content="Features — Kultr" />
+    <meta property="og:description" content="Everything Kultr does, and why it does it that way." />
+    <meta property="og:image" content="https://kultr.cc/assets/img/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script>document.documentElement.classList.add('js')</script>
+    <link rel="stylesheet" href="assets/css/site.css" />
+    <script src="assets/js/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="backdrop" aria-hidden="true"><div class="backdrop-layer"></div><div class="backdrop-layer"></div></div>
+
+    <header class="nav wrap">
+      <div class="nav-bar glass">
+        <a class="brand" href="./" aria-label="Kultr, home"><img src="assets/img/logo-128.webp" alt="" width="30" height="30" />Kultr</a>
+        <ul class="nav-links">
+          <li><a href="features.html" aria-current="page">Features</a></li>
+          <li><a href="index.html#injekt">InjeKt</a></li>
+          <li><a href="index.html#look">Screenshots</a></li>
+          <li><a href="index.html#get">Get Kultr</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a class="nav-icon" href="https://github.com/evropiani/Kultr" aria-label="Kultr on GitHub"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#github"></use></svg></a>
+          <a class="nav-icon" href="https://discord.com/users/319246364246540288" aria-label="Talk to the developer on Discord"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#discord"></use></svg></a>
+          <a class="btn btn-primary btn-sm" href="https://web.kultr.cc/">Open the app</a>
+          <button class="nav-icon nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#menu"></use></svg></button>
+        </div>
+      </div>
+      <nav class="nav-menu glass" id="nav-menu" aria-label="Site">
+        <a href="features.html" aria-current="page"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#layout-grid"></use></svg>Features</a>
+        <a href="index.html#injekt"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#sparkles"></use></svg>InjeKt</a>
+        <a href="index.html#look"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#monitor"></use></svg>Screenshots</a>
+        <a href="index.html#get"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#download"></use></svg>Get Kultr</a>
+        <a href="https://github.com/evropiani/Kultr"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#github"></use></svg>GitHub</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="wrap">
+          <p class="eyebrow">Kultr, in full</p>
+          <h1><span class="chrome">Features</span></h1>
+          <p>Everything Kultr does &mdash; and, since it&rsquo;s usually the interesting part, why it does it that way.</p>
+          <nav class="jump" aria-label="Features on this page">
+            <a href="#library">Library mirror</a>
+            <a href="#decks">Two decks</a>
+            <a href="#injekt">InjeKt</a>
+            <a href="#offline">Offline</a>
+            <a href="#home">Home page</a>
+            <a href="#appearance">Appearance</a>
+            <a href="#servers">Servers</a>
+            <a href="#select">Select &amp; drag</a>
+            <a href="#android">Android</a>
+            <a href="#sound">Sound</a>
+            <a href="#install">On a phone</a>
+            <a href="#keyboard">Keyboard</a>
+            <a href="#cast">Cast</a>
+            <a href="#more">Everything else</a>
+          </nav>
+          <div class="legend" aria-label="Platform key">
+            <span class="platform web">Web</span>
+            <span class="platform android">Android</span>
+            <span class="platform planned">iOS, planned</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="wrap">
+        <!-- ------------------------------------------------------ library -->
+        <section class="feature" id="library" data-tint="0" aria-labelledby="f-library">
+          <div class="feature-text" data-reveal>
+            <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#refresh-cw"></use></svg>Sync</p>
+            <h2 id="f-library">Your whole library, mirrored</h2>
+            <p>Kultr doesn&rsquo;t ask the server to draw a page. It asks once, keeps the answer, and draws everything from that.</p>
+            <ul class="ticks">
+              <li>One button mirrors every artist, album, track, playlist and genre</li>
+              <li>Browsing, sorting and searching are instant &mdash; and keep working with the server switched off</li>
+              <li><strong>Check for updates</strong> re-reads the album index and pulls in only what actually changed</li>
+              <li>Checks by itself on start-up and hourly; change that on the Sync page</li>
+              <li>One request per album, so a few thousand albums take a minute or two &mdash; once</li>
+              <li>A local database per server, refreshed by background syncs <span class="note">Android</span></li>
+            </ul>
+            <div class="platforms"><span class="platform web">Web</span><span class="platform android">Android</span></div>
+          </div>
+          <div class="media" data-reveal>
+            <div class="shot glass"><img src="assets/img/screens/albums.webp" width="1280" height="800" loading="lazy" alt="Kultr's albums grid, with 48 albums and a Sync offline button." /></div>
+          </div>
+        </section>
+
+        <!-- -------------------------------------------------------- decks -->
+        <section class="feature" id="decks" data-tint="1" aria-labelledby="f-decks">
+          <div class="feature-text" data-reveal>
+            <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#layers"></use></svg>Playback</p>
+            <h2 id="f-decks">Two decks, genuinely overlapping</h2>
+            <p>A crossfade in Kultr isn&rsquo;t a volume trick on one player. Every track plays on one of two decks, so the old and the new really do play at once.</p>
+            <ul class="ticks">
+              <li>Crossfade anywhere from 0 to 20 seconds</li>
+              <li>Four fade shapes: equal power, linear, smooth and sharp</li>
+              <li><strong>Gapless</strong> &mdash; turn crossfade off and the next track starts the instant this one ends</li>
+              <li>Or a clean cut, if that&rsquo;s what the album wants <span class="note">Android</span></li>
+              <li>With InjeKt on, it sets these numbers itself whenever it knows both tracks</li>
+            </ul>
+            <div class="platforms"><span class="platform web">Web</span><span class="platform android">Android</span></div>
+          </div>
+          <div class="media" data-reveal>
+            <div class="mock glass">
+              <div class="mock-title"><span>Fade shape</span><span class="chip">8 s overlap</span></div>
+              <div class="curves">
+                <div class="curve is-on">
+                  <svg viewBox="0 0 200 100" aria-hidden="true"><path class="grid" d="M6 50H194M100 8V92" fill="none" /><path class="out" d="M6.0 8.0L13.8 8.2L21.7 8.7L29.5 9.6L37.3 10.9L45.2 12.5L53.0 14.4L60.8 16.7L68.7 19.3L76.5 22.2L84.3 25.4L92.2 28.8L100.0 32.6L107.8 36.6L115.7 40.9L123.5 45.3L131.3 50.0L139.2 54.8L147.0 59.9L154.8 65.0L162.7 70.3L170.5 75.6L178.3 81.0L186.2 86.5L194.0 92.0" fill="none" stroke-width="3" stroke-linecap="round" /><path class="in" d="M6.0 92.0L13.8 86.5L21.7 81.0L29.5 75.6L37.3 70.3L45.2 65.0L53.0 59.9L60.8 54.8L68.7 50.0L76.5 45.3L84.3 40.9L92.2 36.6L100.0 32.6L107.8 28.8L115.7 25.4L123.5 22.2L131.3 19.3L139.2 16.7L147.0 14.4L154.8 12.5L162.7 10.9L170.5 9.6L178.3 8.7L186.2 8.2L194.0 8.0" fill="none" stroke-width="3" stroke-linecap="round" /></svg>
+                  <span>Equal power</span><small>Steady loudness through the blend &mdash; the usual choice</small>
+                </div>
+                <div class="curve">
+                  <svg viewBox="0 0 200 100" aria-hidden="true"><path class="grid" d="M6 50H194M100 8V92" fill="none" /><path class="out" d="M6.0 8.0L13.8 11.5L21.7 15.0L29.5 18.5L37.3 22.0L45.2 25.5L53.0 29.0L60.8 32.5L68.7 36.0L76.5 39.5L84.3 43.0L92.2 46.5L100.0 50.0L107.8 53.5L115.7 57.0L123.5 60.5L131.3 64.0L139.2 67.5L147.0 71.0L154.8 74.5L162.7 78.0L170.5 81.5L178.3 85.0L186.2 88.5L194.0 92.0" fill="none" stroke-width="3" stroke-linecap="round" /><path class="in" d="M6.0 92.0L13.8 88.5L21.7 85.0L29.5 81.5L37.3 78.0L45.2 74.5L53.0 71.0L60.8 67.5L68.7 64.0L76.5 60.5L84.3 57.0L92.2 53.5L100.0 50.0L107.8 46.5L115.7 43.0L123.5 39.5L131.3 36.0L139.2 32.5L147.0 29.0L154.8 25.5L162.7 22.0L170.5 18.5L178.3 15.0L186.2 11.5L194.0 8.0" fill="none" stroke-width="3" stroke-linecap="round" /></svg>
+                  <span>Linear</span><small>A straight line each way</small>
+                </div>
+                <div class="curve">
+                  <svg viewBox="0 0 200 100" aria-hidden="true"><path class="grid" d="M6 50H194M100 8V92" fill="none" /><path class="out" d="M6.0 8.0L13.8 8.4L21.7 9.7L29.5 11.6L37.3 14.2L45.2 17.4L53.0 21.1L60.8 25.3L68.7 29.8L76.5 34.6L84.3 39.6L92.2 44.8L100.0 50.0L107.8 55.2L115.7 60.4L123.5 65.4L131.3 70.2L139.2 74.7L147.0 78.9L154.8 82.6L162.7 85.8L170.5 88.4L178.3 90.3L186.2 91.6L194.0 92.0" fill="none" stroke-width="3" stroke-linecap="round" /><path class="in" d="M6.0 92.0L13.8 91.6L21.7 90.3L29.5 88.4L37.3 85.8L45.2 82.6L53.0 78.9L60.8 74.7L68.7 70.2L76.5 65.4L84.3 60.4L92.2 55.2L100.0 50.0L107.8 44.8L115.7 39.6L123.5 34.6L131.3 29.8L139.2 25.3L147.0 21.1L154.8 17.4L162.7 14.2L170.5 11.6L178.3 9.7L186.2 8.4L194.0 8.0" fill="none" stroke-width="3" stroke-linecap="round" /></svg>
+                  <span>Smooth</span><small>Eases in and out at both ends</small>
+                </div>
+                <div class="curve">
+                  <svg viewBox="0 0 200 100" aria-hidden="true"><path class="grid" d="M6 50H194M100 8V92" fill="none" /><path class="out" d="M6.0 8.0L13.8 8.3L21.7 9.0L29.5 10.0L37.3 11.3L45.2 13.0L53.0 14.9L60.8 17.1L68.7 19.6L76.5 22.4L84.3 25.4L92.2 28.6L100.0 32.1L107.8 35.9L115.7 39.8L123.5 44.0L131.3 48.5L139.2 53.2L147.0 58.0L154.8 63.2L162.7 68.5L170.5 74.1L178.3 79.8L186.2 85.8L194.0 92.0" fill="none" stroke-width="3" stroke-linecap="round" /><path class="in" d="M6.0 92.0L13.8 79.5L21.7 73.1L29.5 67.9L37.3 63.3L45.2 59.2L53.0 55.4L60.8 51.9L68.7 48.5L76.5 45.4L84.3 42.3L92.2 39.4L100.0 36.6L107.8 33.9L115.7 31.2L123.5 28.6L131.3 26.1L139.2 23.7L147.0 21.3L154.8 19.0L162.7 16.7L170.5 14.5L178.3 12.3L186.2 10.1L194.0 8.0" fill="none" stroke-width="3" stroke-linecap="round" /></svg>
+                  <span>Sharp</span><small>Keeps a busy mix from turning to mud</small>
+                </div>
+              </div>
+              <div class="mock-legend"><span><i></i>Outgoing deck</span><span><i class="in"></i>Incoming deck</span></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ------------------------------------------------------- injekt -->
+        <section class="feature" id="injekt" data-tint="2" aria-labelledby="f-injekt">
+          <div class="feature-text" data-reveal>
+            <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#sparkles"></use></svg>Mixing</p>
+            <h2 id="f-injekt">InjeKt, showing its working</h2>
+            <p>Kultr&rsquo;s mixing engine measures every track, plans each hand-over from the numbers, and puts the plan on screen in the full player&rsquo;s InjeKt tab.</p>
+            <ul class="ticks">
+              <li>Tempo and beat grid, key in Camelot notation, energy, and where the intro and outro sit</li>
+              <li>Beat-matching from both sides &mdash; <strong>Tempo share</strong> decides how the work is split, and pitch is preserved</li>
+              <li>Bars aligned, basslines swapped, clashing keys filter-swept instead of blended</li>
+              <li>Long intros skipped; an endless, key-aware queue when yours runs out</li>
+              <li>Analysed just in time before each transition, or all at once with <strong>Analyse missing</strong></li>
+              <li>A toggle in the player bar and the full player &mdash; or press <kbd>D</kbd></li>
+            </ul>
+            <div class="platforms"><span class="platform web">Web</span><span class="platform android">Android</span></div>
+          </div>
+          <div class="media" data-reveal>
+            <div class="shot glass"><img src="assets/img/screens/injekt.webp" width="1280" height="800" loading="lazy" alt="The InjeKt tab: now playing at 126 BPM in 8A, up next at 118 BPM in 8A, a blend starting at 0:11 with a 7.2 second overlap and a bass swap." /></div>
+          </div>
+        </section>
+
+        <!-- ------------------------------------------------------ offline -->
+        <section class="feature" id="offline" data-tint="3" aria-labelledby="f-offline">
+          <div class="feature-text" data-reveal>
+            <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#folder-down"></use></svg>Downloads</p>
+            <h2 id="f-offline">Offline, and properly named</h2>
+            <p>There&rsquo;s a sync button on every page: albums, artists, songs, genres, playlists, favourites, or the whole library.</p>
+            <ul class="ticks">
+              <li>Incremental &mdash; run it again and it fetches only what you don&rsquo;t already have</li>
+              <li>Into the browser, or into a real folder you pick, as readable <code>Artist - Album - Track</code> files</li>
+              <li>Pick the folder once in Settings &rarr; Offline; a web page can only write where you&rsquo;ve pointed it</li>
+              <li>Choose the bitrate, and download on Wi-Fi only if you like <span class="note">Android</span></li>
+              <li>Downloads play first, before the network is tried, and a stream cache keeps recent tracks too <span class="note">Android</span></li>
+            </ul>
+            <div class="platforms"><span class="platform web">Web</span><span class="platform android">Android</span></div>
+          </div>
+          <div class="media" data-reveal>
+            <div class="mock glass">
+              <div class="mock-title"><span>Music / Kultr</span><span class="chip chip-accent">Folder</span></div>
+              <ul class="files">
+                <li class="folder"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#folder"></use></svg><span class="name">Kultr</span><span class="size">101 files</span></li>
+                <li class="done"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#file-audio"></use></svg><span class="name">Signal Drift - Aurora Vanta - Aurora I.flac</span><span class="size">38.2 MB</span></li>
+                <li class="done"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#file-audio"></use></svg><span class="name">Signal Drift - Aurora Vanta - Vanta II.flac</span><span class="size">41.7 MB</span></li>
+                <li class="done"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#file-audio"></use></svg><span class="name">Signal Drift - Carrier Wave - Null Modem.flac</span><span class="size">36.9 MB</span></li>
+                <li class="done"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#file-audio"></use></svg><span class="name">Nocturne Machine - Low Orbit - Re-entry.flac</span><span class="size">44.0 MB</span></li>
+                <li class="done"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#file-audio"></use></svg><span class="name">The Glass Harbour - Salt and Static - Salt Flats.flac</span><span class="size">29.4 MB</span></li>
+              </ul>
+              <div class="sync-row"><span><strong>Sync offline</strong> &middot; whole library</span><span>96 already here, fetching 5</span></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- --------------------------------------------------------- home -->
+        <section class="feature" id="home" data-tint="4" aria-labelledby="f-home">
+          <div class="feature-text" data-reveal>
+            <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#house"></use></svg>Home</p>
+            <h2 id="f-home">A home page you choose</h2>
+            <p>Fifteen shelves &mdash; most played, random, favourite and recently added, across tracks, albums, artists, playlists and radio.</p>
+            <ul class="ticks">
+              <li>Switch each shelf on or off, and put them in the order you want</li>
+              <li>A shelf with nothing to show is skipped, so the page never looks half-finished</li>
+              <li><strong>Start an InjeKt set</strong> or <strong>Shuffle all</strong> right from the top</li>
+              <li>Jump back in, albums you keep coming back to, playlists on repeat, internet radio and more</li>
+            </ul>
+            <div class="platforms"><span class="platform web">Web</span><span class="platform android">Android</span></div>
+          </div>
+          <div class="media" data-reveal>
+            <div class="shot glass"><img src="assets/img/screens/home-settings.webp" width="1280" height="800" loading="lazy" alt="Home page settings, listing shelves that can be switched on, off and reordered." /></div>
+          </div>
+        </section>
+
+        <!-- --------------------------------------------------- appearance -->
+        <section class="feature" id="appearance" data-tint="0" aria-labelledby="f-appearance">
+          <div class="feature-text" data-reveal>
+            <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#palette"></use></svg>Appearance</p>
+            <h2 id="f-appearance">The colour comes from the cover</h2>
+            <p>The surfaces, the highlights and the backdrop all retint from the artwork of whatever is playing, so Kultr takes on the mood of the music. The rest is up to you.</p>
+            <ul class="ticks">
+              <li>Light and dark themes, and a blurred artwork background</li>
+              <li>Three corner styles: sharp, soft and round</li>
+              <li>Six playheads that preview themselves: minimal, glow, pulse, wave, comet and equaliser</li>
+              <li>Borders that take the accent colour, with opacity sliders for borders and panels</li>
+              <li>An accent you can blend with the artwork&rsquo;s, rather than choosing between the two</li>
+              <li>Click the time in the player to count down instead of up</li>
+              <li>A <strong>Custom CSS</strong> box, applied last so it wins over everything</li>
+              <li>A now-playing screen tinted by the artwork <span class="note">Android</span></li>
+            </ul>
+            <div class="platforms"><span class="platform web">Web</span></div>
+          </div>
+          <div class="media" data-reveal>
+            <div class="shot glass"><img src="assets/img/screens/settings.webp" width="1280" height="800" loading="lazy" alt="Appearance settings: blurred artwork background, reduce motion, corners, six playhead styles, count time down." /></div>
+          </div>
+        </section>
+
+        <!-- ------------------------------------------------------ servers -->
+        <section class="feature" id="servers" data-tint="1" aria-labelledby="f-servers">
+          <div class="feature-text" data-reveal>
+            <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#server"></use></svg>Servers</p>
+            <h2 id="f-servers">One screen to connect. As many servers as you like.</h2>
+            <p>Name the server, or let Kultr use its address. Then add another.</p>
+            <ul class="ticks">
+              <li>Add as many Navidrome servers as you like, and give each one a name</li>
+              <li>Switch between them, or turn one off without deleting it</li>
+              <li>Leave the address blank when Kultr is proxying Navidrome for you &mdash; no CORS to fight</li>
+              <li>Stay signed in, or have the password dropped when the tab closes</li>
+              <li>Each server keeps its own library, downloads and history; passwords are sealed with a key in the Android Keystore <span class="note">Android</span></li>
+              <li>Speaks the Subsonic API with Navidrome&rsquo;s OpenSubsonic extensions, so other Subsonic servers largely work too</li>
+            </ul>
+            <div class="platforms"><span class="platform web">Web</span><span class="platform android">Android</span></div>
+          </div>
+          <div class="media" data-reveal>
+            <div class="shot glass"><img src="assets/img/screens/login.webp" width="1280" height="800" loading="lazy" alt="Kultr's sign-in screen, with fields for a server name, address, username and password." /></div>
+          </div>
+        </section>
+
+        <!-- ------------------------------------------------------- select -->
+        <section class="feature" id="select" data-tint="2" aria-labelledby="f-select">
+          <div class="feature-text" data-reveal>
+            <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#mouse-pointer-click"></use></svg>Library tools</p>
+            <h2 id="f-select">Select in bulk. Drag and drop.</h2>
+            <p>The desktop gestures you&rsquo;d expect from a music app, in a browser tab.</p>
+            <ul class="ticks">
+              <li>Tick boxes on tracks and cards; shift-click for a whole range</li>
+              <li>Then download, delete, queue, favourite or add to a playlist in one go</li>
+              <li>Drag any track, album or artist onto a target: play next, add to queue, favourite, sync offline, or delete downloads</li>
+              <li>A queue you reorder by dragging</li>
+            </ul>
+            <div class="platforms"><span class="platform web">Web</span></div>
+          </div>
+          <div class="media" data-reveal>
+            <div class="mock glass" style="position: relative">
+              <div class="mock-title"><span>Aurora Vanta</span><span class="chip chip-accent">3 selected</span></div>
+              <div class="rows">
+                <div class="row is-sel"><span class="box"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"></use></svg></span><span class="thumb cover" style="--c1: #df6e3a; --c2: #7f9b23"></span><span><b>Aurora I</b><small>Signal Drift</small></span><span class="dur">0:20</span></div>
+                <div class="row is-sel"><span class="box"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"></use></svg></span><span class="thumb cover" style="--c1: #df6e3a; --c2: #7f9b23"></span><span><b>Vanta II</b><small>Signal Drift</small></span><span class="dur">0:20</span></div>
+                <div class="row is-sel"><span class="box"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"></use></svg></span><span class="thumb cover" style="--c1: #8fd33e; --c2: #2ca74e"></span><span><b>Null Modem</b><small>Signal Drift</small></span><span class="dur">0:20</span></div>
+                <div class="row"><span class="box"></span><span class="thumb cover" style="--c1: #d93cae; --c2: #a4303e"></span><span><b>Interchange</b><small>Nocturne Machine</small></span><span class="dur">0:20</span></div>
+              </div>
+              <span class="drag-ghost" aria-hidden="true"><svg class="icon"><use href="assets/icons.svg#music"></use></svg>3 tracks</span>
+              <div class="drop-targets">
+                <span class="drop is-hot"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#list-plus"></use></svg>Play next</span>
+                <span class="drop"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#list-music"></use></svg>Add to queue</span>
+                <span class="drop"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#heart"></use></svg>Favourite</span>
+                <span class="drop"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#folder-down"></use></svg>Sync offline</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ------------------------------------------------------ android -->
+        <section class="feature" id="android" data-tint="3" aria-labelledby="f-android">
+          <div class="feature-text" data-reveal>
+            <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#smartphone"></use></svg>Android</p>
+            <h2 id="f-android">A proper Android music app</h2>
+            <p>Kultr for Android keeps the web client&rsquo;s behaviour and settings, and adds what only a native app can do.</p>
+            <ul class="ticks">
+              <li>Background playback and a media notification</li>
+              <li>Lock-screen and Bluetooth controls</li>
+              <li>Android Auto</li>
+              <li>&ldquo;Play &hellip; on Kultr&rdquo; voice search</li>
+              <li>Settings files open in either app &mdash; export on one, import on the other</li>
+              <li>Signed releases that install over each other, keeping your servers, library and downloads</li>
+            </ul>
+            <div class="platforms"><span class="platform android">Android 8.0 and later</span></div>
+          </div>
+          <div class="media" data-reveal>
+            <div class="mock glass">
+              <div class="notif">
+                <div class="notif-head"><img src="assets/img/logo-128.webp" alt="" width="16" height="16" />Kultr &middot; now</div>
+                <div class="notif-body">
+                  <div><b>Null Modem</b><small>Signal Drift &mdash; Carrier Wave</small>
+                    <div class="notif-ctl" aria-hidden="true">
+                      <svg class="icon"><use href="assets/icons.svg#skip-back"></use></svg>
+                      <svg class="icon fill"><use href="assets/icons.svg#pause"></use></svg>
+                      <svg class="icon"><use href="assets/icons.svg#skip-forward"></use></svg>
+                      <svg class="icon"><use href="assets/icons.svg#heart"></use></svg>
+                    </div>
+                  </div>
+                  <span class="notif-art cover" style="--c1: #8fd33e; --c2: #2ca74e"></span>
+                </div>
+                <div class="track" aria-hidden="true"><div class="track-fill"></div></div>
+              </div>
+              <div class="voice"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#mic-vocal"></use></svg><span>&ldquo;Play Carrier Wave on Kultr&rdquo;<small>Voice search, straight into the app</small></span></div>
+              <div class="android-chips">
+                <span class="chip"><svg class="icon" aria-hidden="true" style="width: 14px; height: 14px"><use href="assets/icons.svg#car"></use></svg>Android Auto</span>
+                <span class="chip"><svg class="icon" aria-hidden="true" style="width: 14px; height: 14px"><use href="assets/icons.svg#bluetooth"></use></svg>Bluetooth</span>
+                <span class="chip"><svg class="icon" aria-hidden="true" style="width: 14px; height: 14px"><use href="assets/icons.svg#lock"></use></svg>Lock screen</span>
+                <span class="chip"><svg class="icon" aria-hidden="true" style="width: 14px; height: 14px"><use href="assets/icons.svg#bell"></use></svg>Notification</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- -------------------------------------------------------- sound -->
+        <section class="feature" id="sound" data-tint="4" aria-labelledby="f-sound">
+          <div class="feature-text" data-reveal>
+            <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#sliders-vertical"></use></svg>Sound</p>
+            <h2 id="f-sound">Tuned, levelled, and in sync</h2>
+            <p>The audio settings a music player should have, done properly. Try a preset.</p>
+            <ul class="ticks">
+              <li>A ten-band equaliser with nine presets and a pre-amp</li>
+              <li>ReplayGain, per track or per album, with clipping protection</li>
+              <li>Synced lyrics, line by line, when your files have them; plain text otherwise</li>
+              <li>A sleep timer &mdash; after so many minutes, or at the end of the track</li>
+              <li>Streaming bitrate set per network <span class="note">Android</span></li>
+              <li>The equaliser runs on Web Audio, which needs Kultr and Navidrome on one address &mdash; every self-hosted setup does that for you <span class="note web">Web</span></li>
+            </ul>
+            <div class="platforms"><span class="platform web">Web</span><span class="platform android">Android</span></div>
+          </div>
+          <div class="media" data-reveal>
+            <div class="mock glass">
+              <div class="mock-title"><span>Equaliser</span><span class="chip">Pre-amp 0 dB</span></div>
+              <div class="eq" data-eq role="group" aria-label="Equaliser bands">
+                <div class="eq-band" data-freq="31" role="img"><div class="eq-rail"><div class="eq-fill"></div><div class="eq-knob"></div></div><span>31</span></div>
+                <div class="eq-band" data-freq="62" role="img"><div class="eq-rail"><div class="eq-fill"></div><div class="eq-knob"></div></div><span>62</span></div>
+                <div class="eq-band" data-freq="125" role="img"><div class="eq-rail"><div class="eq-fill"></div><div class="eq-knob"></div></div><span>125</span></div>
+                <div class="eq-band" data-freq="250" role="img"><div class="eq-rail"><div class="eq-fill"></div><div class="eq-knob"></div></div><span>250</span></div>
+                <div class="eq-band" data-freq="500" role="img"><div class="eq-rail"><div class="eq-fill"></div><div class="eq-knob"></div></div><span>500</span></div>
+                <div class="eq-band" data-freq="1000" role="img"><div class="eq-rail"><div class="eq-fill"></div><div class="eq-knob"></div></div><span>1k</span></div>
+                <div class="eq-band" data-freq="2000" role="img"><div class="eq-rail"><div class="eq-fill"></div><div class="eq-knob"></div></div><span>2k</span></div>
+                <div class="eq-band" data-freq="4000" role="img"><div class="eq-rail"><div class="eq-fill"></div><div class="eq-knob"></div></div><span>4k</span></div>
+                <div class="eq-band" data-freq="8000" role="img"><div class="eq-rail"><div class="eq-fill"></div><div class="eq-knob"></div></div><span>8k</span></div>
+                <div class="eq-band" data-freq="16000" role="img"><div class="eq-rail"><div class="eq-fill"></div><div class="eq-knob"></div></div><span>16k</span></div>
+              </div>
+              <div class="presets" role="group" aria-label="Presets">
+                <button class="preset" type="button">Flat</button><button class="preset" type="button">Bass Boost</button><button class="preset" type="button">Bass Reduce</button><button class="preset" type="button">Treble Boost</button><button class="preset" type="button">Vocal</button><button class="preset" type="button">Acoustic</button><button class="preset" type="button">Electronic</button><button class="preset" type="button">Late Night</button><button class="preset" type="button">Loudness</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ------------------------------------------------------ install -->
+        <section class="feature" id="install" data-tint="0" aria-labelledby="f-install">
+          <div class="feature-text" data-reveal>
+            <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#download"></use></svg>Install</p>
+            <h2 id="f-install">On a phone, without a store</h2>
+            <p>Kultr is a web app you can install today, anywhere the Android app isn&rsquo;t.</p>
+            <ul class="ticks">
+              <li>On iOS, Share &rarr; Add to Home Screen; in Chrome or Edge, Install app</li>
+              <li>Runs full-screen, and keeps working offline for anything you&rsquo;ve downloaded</li>
+              <li>Shows up on the lock screen</li>
+              <li>A native iOS app is planned &mdash; the player, sync engine and InjeKt DSP are plain TypeScript, so they port as they are</li>
+            </ul>
+            <div class="platforms"><span class="platform web">Web &middot; PWA</span><span class="platform planned">iOS app, planned</span></div>
+          </div>
+          <div class="media" data-reveal>
+            <div class="phones">
+              <div class="phone glass"><img src="assets/img/screens/mobile-album.webp" width="420" height="909" loading="lazy" alt="Kultr on a phone: an album page." /></div>
+              <div class="phone glass"><img src="assets/img/screens/mobile-player.webp" width="420" height="909" loading="lazy" alt="Kultr on a phone: the full-screen player with InjeKt on." /></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ----------------------------------------------------- keyboard -->
+        <section class="feature" id="keyboard" data-tint="1" aria-labelledby="f-keyboard">
+          <div class="feature-text" data-reveal>
+            <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#keyboard"></use></svg>Keyboard</p>
+            <h2 id="f-keyboard">Hands on the keys</h2>
+            <p>Everything that matters has a key. Press <kbd>?</kbd> in the app for the full list.</p>
+            <ul class="ticks">
+              <li>Search from anywhere with <kbd>/</kbd></li>
+              <li>Switch InjeKt off mid-listen with <kbd>D</kbd>, without opening settings</li>
+              <li><kbd>Esc</kbd> closes things, or clears a selection</li>
+            </ul>
+            <div class="platforms"><span class="platform web">Web</span></div>
+          </div>
+          <div class="media" data-reveal>
+            <div class="mock glass">
+              <div class="mock-title"><span>Keyboard shortcuts</span><kbd>?</kbd></div>
+              <div class="keys">
+                <div class="key"><span><kbd>Space</kbd></span>Play / pause</div>
+                <div class="key"><span><kbd>M</kbd></span>Mute</div>
+                <div class="key"><span><kbd>&larr;</kbd><kbd>&rarr;</kbd></span>Seek 5 s</div>
+                <div class="key"><span><kbd>S</kbd></span>Shuffle</div>
+                <div class="key"><span><kbd>&#8679;</kbd><kbd>&larr;</kbd><kbd>&rarr;</kbd></span>Previous / next</div>
+                <div class="key"><span><kbd>R</kbd></span>Repeat</div>
+                <div class="key"><span><kbd>&uarr;</kbd><kbd>&darr;</kbd></span>Volume</div>
+                <div class="key"><span><kbd>L</kbd></span>Favourite</div>
+                <div class="key"><span><kbd>/</kbd></span>Search</div>
+                <div class="key"><span><kbd>Q</kbd></span>Queue</div>
+                <div class="key"><span><kbd>D</kbd></span>Toggle InjeKt</div>
+                <div class="key"><span><kbd>F</kbd></span>Full player</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- --------------------------------------------------------- cast -->
+        <section class="feature" id="cast" data-tint="2" aria-labelledby="f-cast">
+          <div class="feature-text" data-reveal>
+            <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#cast"></use></svg>Cast</p>
+            <h2 id="f-cast">Send it to the big speakers</h2>
+            <p>The cast button opens whatever picker the browser provides.</p>
+            <ul class="ticks">
+              <li>Chromecast and friends through the Remote Playback API, in Chrome and Edge</li>
+              <li>AirPlay in Safari</li>
+              <li>Firefox has neither, so the button doesn&rsquo;t appear rather than sitting there inert</li>
+              <li>The receiver fetches the stream itself, so it has to be able to reach your Navidrome</li>
+              <li>It gets the plain file: the equaliser, crossfade and InjeKt don&rsquo;t apply while casting</li>
+            </ul>
+            <div class="platforms"><span class="platform web">Web</span></div>
+          </div>
+          <div class="media" data-reveal>
+            <div class="mock glass">
+              <div class="mock-title"><span>Play on</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#cast"></use></svg></div>
+              <div class="cast-list">
+                <div class="cast-item"><span class="ic"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#cast"></use></svg></span><span><b>Chromecast</b><small>Chrome and Edge</small></span><span class="chip chip-accent">Ready</span></div>
+                <div class="cast-item"><span class="ic"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#radio"></use></svg></span><span><b>AirPlay</b><small>Safari</small></span><span class="chip chip-accent">Ready</span></div>
+                <div class="cast-item is-off"><span class="ic"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#eye-off"></use></svg></span><span><b>Firefox</b><small>No casting API, so no button</small></span><span class="chip">Hidden</span></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- --------------------------------------------------- everything else -->
+      <section class="section" id="more" data-tint="3" aria-labelledby="f-more">
+        <div class="wrap">
+          <div class="section-head center" data-reveal>
+            <p class="eyebrow">And the rest</p>
+            <h2 id="f-more">Everything else</h2>
+            <p>The parts every music app needs, all there.</p>
+          </div>
+          <div class="cloud" data-reveal>
+            <span class="chip"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#grip-vertical"></use></svg>Queue with drag to reorder</span>
+            <span class="chip"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#heart"></use></svg>Favourites</span>
+            <span class="chip"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#star"></use></svg>Ratings</span>
+            <span class="chip"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#list-music"></use></svg>Playlists and playlist editing</span>
+            <span class="chip"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#activity"></use></svg>Scrobbling, with an offline queue on Android</span>
+            <span class="chip"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#timer"></use></svg>Sleep timer</span>
+            <span class="chip"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#radio"></use></svg>Internet radio</span>
+            <span class="chip"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#chart-no-axes-column"></use></svg>Listening stats</span>
+            <span class="chip"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#mic-vocal"></use></svg>Synced lyrics</span>
+            <span class="chip"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#volume-2"></use></svg>ReplayGain</span>
+            <span class="chip"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#file-json"></use></svg>Settings backup, secrets left out</span>
+            <span class="chip"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#code"></use></svg>Custom CSS</span>
+            <span class="chip"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#server"></use></svg>Many servers</span>
+            <span class="chip"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#monitor"></use></svg>Installable PWA</span>
+            <span class="chip"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#car"></use></svg>Android Auto</span>
+            <span class="chip"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#container"></use></svg>Docker, or plain Node</span>
+            <span class="chip"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#shield-check"></use></svg>No analytics, no telemetry</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section closing" aria-labelledby="closing-title">
+        <div class="wrap" data-reveal>
+          <h2 id="closing-title"><span class="chrome">Hear it for yourself.</span></h2>
+          <p>The demo is the real app, and it connects to your own Navidrome. Nothing to install.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="https://web.kultr.cc/"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#play"></use></svg>Try it in your browser</a>
+            <a class="btn" href="https://github.com/evropiani/Kultr_Android/releases/latest"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#smartphone"></use></svg>Get the Android app</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap">
+        <div class="footer-grid">
+          <div>
+            <a class="brand" href="./"><img src="assets/img/logo-128.webp" alt="" width="30" height="30" />Kultr</a>
+            <p class="footer-about">A modern, minimalist client for Navidrome, for the web and Android. Free and open source.</p>
+          </div>
+          <div>
+            <h4>Kultr</h4>
+            <ul>
+              <li><a href="features.html">Features</a></li>
+              <li><a href="index.html#injekt">InjeKt</a></li>
+              <li><a href="index.html#look">Screenshots</a></li>
+              <li><a href="https://web.kultr.cc/">Open the app</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Get it</h4>
+            <ul>
+              <li><a href="https://github.com/evropiani/Kultr_Android/releases/latest">Android APK</a></li>
+              <li><a href="https://github.com/evropiani/Kultr/blob/main/docs/INSTALL.md">Install guide</a></li>
+              <li><a href="https://github.com/evropiani/Kultr/blob/main/docs/FAQ.md">FAQ</a></li>
+              <li><a href="https://github.com/evropiani/Kultr/blob/main/CHANGELOG.md">Changelog</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Talk</h4>
+            <ul>
+              <li><a href="https://github.com/evropiani/Kultr"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#github"></use></svg>GitHub</a></li>
+              <li><a href="https://discord.com/users/319246364246540288"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#discord"></use></svg>@evropiani</a></li>
+              <li><a href="https://github.com/evropiani/Kultr/issues">Report a problem</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-base">
+          <span>&copy; 2026 Kultr &middot; Apache 2.0 &middot; Not affiliated with the Navidrome project.</span>
+          <span>No cookies. No analytics. No third-party requests.</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

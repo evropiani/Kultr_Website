@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>Features — Kultr</title>
-    <meta name="description" content="Everything Kultr does: a local mirror of your Navidrome library, two-deck crossfade and gapless, InjeKt beat-matched mixing, offline sync, many servers, a native Android app and more." />
+    <meta name="description" content="Everything Kultr does: a local mirror of your Navidrome library, two-deck crossfade and gapless, InjeKt beat-matched mixing, offline sync, many servers, native Android and iOS apps and more." />
     <link rel="canonical" href="https://kultr.cc/features.html" />
     <meta name="theme-color" content="#08080c" />
     <meta name="color-scheme" content="dark" />
@@ -79,7 +79,7 @@
           <div class="legend" aria-label="Platform key">
             <span class="platform web">Web</span>
             <span class="platform android">Android</span>
-            <span class="platform planned">iOS, planned</span>
+            <span class="platform ios">iOS</span>
           </div>
         </div>
       </section>
@@ -97,9 +97,9 @@
               <li><strong>Check for updates</strong> re-reads the album index and pulls in only what actually changed</li>
               <li>Checks by itself on start-up and hourly; change that on the Sync page</li>
               <li>One request per album, so a few thousand albums take a minute or two &mdash; once</li>
-              <li>A local database per server, refreshed by background syncs <span class="note">Android</span></li>
+              <li>A local database per server, refreshed by background syncs <span class="note">Android &amp; iOS</span></li>
             </ul>
-            <div class="platforms"><span class="platform web">Web</span><span class="platform android">Android</span></div>
+            <div class="platforms"><span class="platform web">Web</span><span class="platform android">Android</span><span class="platform ios">iOS</span></div>
           </div>
           <div class="media" data-reveal>
             <div class="shot glass"><img src="assets/img/screens/albums.webp" width="1280" height="800" loading="lazy" alt="Kultr's albums grid, with 48 albums and a Sync offline button." /></div>
@@ -116,10 +116,10 @@
               <li>Crossfade anywhere from 0 to 20 seconds</li>
               <li>Four fade shapes: equal power, linear, smooth and sharp</li>
               <li><strong>Gapless</strong> &mdash; turn crossfade off and the next track starts the instant this one ends</li>
-              <li>Or a clean cut, if that&rsquo;s what the album wants <span class="note">Android</span></li>
+              <li>Or a clean cut, if that&rsquo;s what the album wants <span class="note">Android &amp; iOS</span></li>
               <li>With InjeKt on, it sets these numbers itself whenever it knows both tracks</li>
             </ul>
-            <div class="platforms"><span class="platform web">Web</span><span class="platform android">Android</span></div>
+            <div class="platforms"><span class="platform web">Web</span><span class="platform android">Android</span><span class="platform ios">iOS</span></div>
           </div>
           <div class="media" data-reveal>
             <div class="mock glass">
@@ -158,10 +158,10 @@
               <li>Beat-matching from both sides &mdash; <strong>Tempo share</strong> decides how the work is split, and pitch is preserved</li>
               <li>Bars aligned, basslines swapped, clashing keys filter-swept instead of blended</li>
               <li>Long intros skipped; an endless, key-aware queue when yours runs out</li>
-              <li>Analysed just in time before each transition, or all at once with <strong>Analyse missing</strong></li>
+              <li>Each hand-over is planned as soon as a track starts; <strong>Analyse missing</strong> does the whole library ahead of time</li>
               <li>A toggle in the player bar and the full player &mdash; or press <kbd>D</kbd></li>
             </ul>
-            <div class="platforms"><span class="platform web">Web</span><span class="platform android">Android</span></div>
+            <div class="platforms"><span class="platform web">Web</span><span class="platform android">Android</span><span class="platform ios">iOS</span></div>
           </div>
           <div class="media" data-reveal>
             <div class="shot glass"><img src="assets/img/screens/injekt.webp" width="1280" height="800" loading="lazy" alt="The full player's InjeKt tab: tempo, key, energy, intro and outro for the track playing and the one up next, and when the transition will be planned." /></div>
@@ -178,10 +178,10 @@
               <li>Incremental &mdash; run it again and it fetches only what you don&rsquo;t already have</li>
               <li>Into the browser, or into a real folder you pick, as readable <code>Artist - Album - Track</code> files</li>
               <li>Pick the folder once in Settings &rarr; Offline; a web page can only write where you&rsquo;ve pointed it</li>
-              <li>Choose the bitrate, and download on Wi-Fi only if you like <span class="note">Android</span></li>
-              <li>Downloads play first, before the network is tried, and a stream cache keeps recent tracks too <span class="note">Android</span></li>
+              <li>Choose the bitrate, and download on Wi-Fi only if you like <span class="note">Android &amp; iOS</span></li>
+              <li>Downloads play first, before the network is tried, and a stream cache keeps recent tracks too <span class="note">Android &amp; iOS</span></li>
             </ul>
-            <div class="platforms"><span class="platform web">Web</span><span class="platform android">Android</span></div>
+            <div class="platforms"><span class="platform web">Web</span><span class="platform android">Android</span><span class="platform ios">iOS</span></div>
           </div>
           <div class="media" data-reveal>
             <div class="mock glass">
@@ -211,7 +211,7 @@
               <li><strong>Start an InjeKt set</strong> or <strong>Shuffle all</strong> right from the top</li>
               <li>Jump back in, albums you keep coming back to, playlists on repeat, internet radio and more</li>
             </ul>
-            <div class="platforms"><span class="platform web">Web</span><span class="platform android">Android</span></div>
+            <div class="platforms"><span class="platform web">Web</span><span class="platform android">Android</span><span class="platform ios">iOS</span></div>
           </div>
           <div class="media" data-reveal>
             <div class="shot glass"><img src="assets/img/screens/home-settings.webp" width="1280" height="800" loading="lazy" alt="Home page settings, listing shelves that can be switched on, off and reordered." /></div>
@@ -232,7 +232,7 @@
               <li>An accent you can blend with the artwork&rsquo;s, rather than choosing between the two</li>
               <li>Click the time in the player to count down instead of up</li>
               <li>A <strong>Custom CSS</strong> box, applied last so it wins over everything</li>
-              <li>A now-playing screen tinted by the artwork <span class="note">Android</span></li>
+              <li>A now-playing screen tinted by the artwork <span class="note">Android &amp; iOS</span></li>
             </ul>
             <div class="platforms"><span class="platform web">Web</span></div>
           </div>
@@ -250,12 +250,12 @@
             <ul class="ticks">
               <li>Add as many Navidrome servers as you like, and give each one a name</li>
               <li>Switch between them, or turn one off without deleting it</li>
-              <li>Leave the address blank when Kultr is proxying Navidrome for you &mdash; no CORS to fight</li>
+              <li>Leave the address blank when Kultr and Navidrome share an address, or connect straight to any Navidrome</li>
               <li>Stay signed in, or have the password dropped when the tab closes</li>
-              <li>Each server keeps its own library, downloads and history; passwords are sealed with a key in the Android Keystore <span class="note">Android</span></li>
-              <li>Speaks the Subsonic API with Navidrome&rsquo;s OpenSubsonic extensions, so other Subsonic servers largely work too</li>
+              <li>Each server keeps its own library, downloads and history; passwords are kept in the Android Keystore or the iOS Keychain <span class="note">Android &amp; iOS</span></li>
+              <li>Speaks the Subsonic API with Navidrome&rsquo;s OpenSubsonic extensions; Gonic, Supysonic and Ampache work too</li>
             </ul>
-            <div class="platforms"><span class="platform web">Web</span><span class="platform android">Android</span></div>
+            <div class="platforms"><span class="platform web">Web</span><span class="platform android">Android</span><span class="platform ios">iOS</span></div>
           </div>
           <div class="media" data-reveal>
             <div class="shot glass"><img src="assets/img/screens/login.webp" width="1280" height="800" loading="lazy" alt="Kultr's sign-in screen, with fields for a server name, address, username and password." /></div>
@@ -267,14 +267,14 @@
           <div class="feature-text" data-reveal>
             <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#mouse-pointer-click"></use></svg>Library tools</p>
             <h2 id="f-select">Select in bulk. Drag and drop.</h2>
-            <p>The desktop gestures you&rsquo;d expect from a music app, in a browser tab.</p>
+            <p>The desktop gestures you&rsquo;d expect from a music app, in a browser tab &mdash; and drag and drop on Android too.</p>
             <ul class="ticks">
-              <li>Tick boxes on tracks and cards; shift-click for a whole range</li>
+              <li>Tick boxes on tracks and cards; shift-click for a whole range <span class="note web">Web</span></li>
               <li>Then download, delete, queue, favourite or add to a playlist in one go</li>
               <li>Drag any track, album or artist onto a target: play next, add to queue, favourite, sync offline, or delete downloads</li>
               <li>A queue you reorder by dragging</li>
             </ul>
-            <div class="platforms"><span class="platform web">Web</span></div>
+            <div class="platforms"><span class="platform web">Web</span><span class="platform android">Android</span></div>
           </div>
           <div class="media" data-reveal>
             <div class="mock glass" style="position: relative">
@@ -305,9 +305,10 @@
             <ul class="ticks">
               <li>Background playback and a media notification</li>
               <li>Lock-screen and Bluetooth controls</li>
-              <li>Android Auto</li>
+              <li>Android Auto, and Cast to a Chromecast or speaker group</li>
+              <li>A home screen widget; KWGT and media buttons work too</li>
               <li>&ldquo;Play &hellip; on Kultr&rdquo; voice search</li>
-              <li>Settings files open in either app &mdash; export on one, import on the other</li>
+              <li>Settings files open in any Kultr &mdash; web, Android or iOS</li>
               <li>Signed releases that install over each other, keeping your servers, library and downloads</li>
             </ul>
             <div class="platforms"><span class="platform android">Android 8.0 and later</span></div>
@@ -351,10 +352,9 @@
               <li>ReplayGain, per track or per album, with clipping protection</li>
               <li>Synced lyrics, line by line, when your files have them; plain text otherwise</li>
               <li>A sleep timer &mdash; after so many minutes, or at the end of the track</li>
-              <li>Streaming bitrate set per network <span class="note">Android</span></li>
-              <li>The equaliser runs on Web Audio, which needs Kultr and Navidrome on one address &mdash; every self-hosted setup does that for you <span class="note web">Web</span></li>
+              <li>Streaming bitrate set per network <span class="note">Android &amp; iOS</span></li>
             </ul>
-            <div class="platforms"><span class="platform web">Web</span><span class="platform android">Android</span></div>
+            <div class="platforms"><span class="platform web">Web</span><span class="platform android">Android</span><span class="platform ios">iOS</span></div>
           </div>
           <div class="media" data-reveal>
             <div class="mock glass">
@@ -383,14 +383,13 @@
           <div class="feature-text" data-reveal>
             <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#download"></use></svg>Install</p>
             <h2 id="f-install">On a phone, without a store</h2>
-            <p>Kultr is a web app you can install today, anywhere the Android app isn&rsquo;t.</p>
+            <p>Rather not install an app? The web version installs from the browser.</p>
             <ul class="ticks">
               <li>On iOS, Share &rarr; Add to Home Screen; in Chrome or Edge, Install app</li>
               <li>Runs full-screen, and keeps working offline for anything you&rsquo;ve downloaded</li>
               <li>Shows up on the lock screen</li>
-              <li>A native iOS app is planned &mdash; the player, sync engine and InjeKt DSP are plain TypeScript, so they port as they are</li>
             </ul>
-            <div class="platforms"><span class="platform web">Web &middot; PWA</span><span class="platform planned">iOS app, planned</span></div>
+            <div class="platforms"><span class="platform web">Web &middot; PWA</span></div>
           </div>
           <div class="media" data-reveal>
             <div class="phones">
@@ -439,22 +438,24 @@
           <div class="feature-text" data-reveal>
             <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#cast"></use></svg>Cast</p>
             <h2 id="f-cast">Send it to the big speakers</h2>
-            <p>The cast button opens whatever picker the browser provides.</p>
+            <p>In the browser, the cast button opens whatever picker the browser provides. The apps have their own.</p>
             <ul class="ticks">
-              <li>Chromecast and friends through the Remote Playback API, in Chrome and Edge</li>
-              <li>AirPlay in Safari</li>
-              <li>Firefox has neither, so the button doesn&rsquo;t appear rather than sitting there inert</li>
-              <li>The receiver fetches the stream itself, so it has to be able to reach your Navidrome</li>
-              <li>It gets the plain file: the equaliser, crossfade and InjeKt don&rsquo;t apply while casting</li>
+              <li>Chromecast and friends through the Remote Playback API, in Chrome and Edge <span class="note web">Web</span></li>
+              <li>AirPlay in Safari <span class="note web">Web</span></li>
+              <li>Firefox has neither, so the button doesn&rsquo;t appear rather than sitting there inert <span class="note web">Web</span></li>
+              <li>The receiver fetches the stream itself, so it has to be able to reach your Navidrome <span class="note web">Web</span></li>
+              <li>It gets the plain file: the equaliser, crossfade and InjeKt don&rsquo;t apply while casting <span class="note web">Web</span></li>
+              <li>Cast to a Chromecast or speaker group from the player <span class="note">Android</span></li>
+              <li>AirPlay to a HomePod, Apple TV or any AirPlay speaker <span class="note ios">iOS</span></li>
             </ul>
-            <div class="platforms"><span class="platform web">Web</span></div>
+            <div class="platforms"><span class="platform web">Web</span><span class="platform android">Android</span><span class="platform ios">iOS</span></div>
           </div>
           <div class="media" data-reveal>
             <div class="mock glass">
               <div class="mock-title"><span>Play on</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#cast"></use></svg></div>
               <div class="cast-list">
-                <div class="cast-item"><span class="ic"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#cast"></use></svg></span><span><b>Chromecast</b><small>Chrome and Edge</small></span><span class="chip chip-accent">Ready</span></div>
-                <div class="cast-item"><span class="ic"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#radio"></use></svg></span><span><b>AirPlay</b><small>Safari</small></span><span class="chip chip-accent">Ready</span></div>
+                <div class="cast-item"><span class="ic"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#cast"></use></svg></span><span><b>Chromecast</b><small>Chrome, Edge and Android</small></span><span class="chip chip-accent">Ready</span></div>
+                <div class="cast-item"><span class="ic"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#radio"></use></svg></span><span><b>AirPlay</b><small>Safari and iPhone</small></span><span class="chip chip-accent">Ready</span></div>
                 <div class="cast-item is-off"><span class="ic"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#eye-off"></use></svg></span><span><b>Firefox</b><small>No casting API, so no button</small></span><span class="chip">Hidden</span></div>
               </div>
             </div>
@@ -475,7 +476,7 @@
             <span class="chip"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#heart"></use></svg>Favourites</span>
             <span class="chip"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#star"></use></svg>Ratings</span>
             <span class="chip"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#list-music"></use></svg>Playlists and playlist editing</span>
-            <span class="chip"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#activity"></use></svg>Scrobbling, with an offline queue on Android</span>
+            <span class="chip"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#activity"></use></svg>Plays kept on your server</span>
             <span class="chip"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#timer"></use></svg>Sleep timer</span>
             <span class="chip"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#radio"></use></svg>Internet radio</span>
             <span class="chip"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#chart-no-axes-column"></use></svg>Listening stats</span>
@@ -498,7 +499,7 @@
           <p>The demo is the real app, and it connects to your own Navidrome. Nothing to install.</p>
           <div class="hero-ctas">
             <a class="btn btn-primary" href="https://web.kultr.cc/"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#play"></use></svg>Try it in your browser</a>
-            <a class="btn" href="https://github.com/evropiani/Kultr_Android/releases/latest"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#smartphone"></use></svg>Get the Android app</a>
+            <a class="btn" href="index.html#get"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#smartphone"></use></svg>Android &amp; iOS apps</a>
           </div>
         </div>
       </section>
@@ -509,7 +510,7 @@
         <div class="footer-grid">
           <div>
             <a class="brand" href="./"><img src="assets/img/logo-128.webp" alt="" width="30" height="30" />Kultr</a>
-            <p class="footer-about">A modern, minimalist client for Navidrome, for the web and Android. Free and open source.</p>
+            <p class="footer-about">A modern, minimalist client for Navidrome, for the web, Android and iOS. Free and open source.</p>
           </div>
           <div>
             <h4>Kultr</h4>
@@ -524,6 +525,7 @@
             <h4>Get it</h4>
             <ul>
               <li><a href="https://github.com/evropiani/Kultr_Android/releases/latest">Android APK</a></li>
+              <li><a href="https://github.com/evropiani/Kultr_iOS/releases/latest">iOS IPA</a></li>
               <li><a href="https://github.com/evropiani/Kultr/blob/main/docs/INSTALL.md">Install guide</a></li>
               <li><a href="https://github.com/evropiani/Kultr/blob/main/docs/FAQ.md">FAQ</a></li>
               <li><a href="https://github.com/evropiani/Kultr/blob/main/CHANGELOG.md">Changelog</a></li>

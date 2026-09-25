@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>Kultr — a Navidrome client that mixes like a DJ</title>
-    <meta name="description" content="Kultr is a modern, minimalist client for Navidrome. It mirrors your whole library locally, crossfades on two real decks, and beat-matches one track into the next. For the web and Android." />
+    <meta name="description" content="Kultr is a modern, minimalist client for Navidrome. It mirrors your whole library locally, crossfades on two real decks, and beat-matches one track into the next. For the web, Android and iOS." />
     <link rel="canonical" href="https://kultr.cc/" />
     <meta name="theme-color" content="#08080c" />
     <meta name="color-scheme" content="dark" />
@@ -60,7 +60,7 @@
         <div class="wrap hero-grid">
           <div class="hero-copy">
             <img class="hero-mark" src="assets/img/logo-256.webp" alt="" width="84" height="84" />
-            <p class="eyebrow">For Navidrome &middot; web and Android</p>
+            <p class="eyebrow">For Navidrome &middot; web, Android and iOS</p>
             <h1>
               <span class="chrome">Your library,</span>
               <span class="tinted">mixed like a DJ.</span>
@@ -71,7 +71,7 @@
             </p>
             <div class="hero-ctas">
               <a class="btn btn-primary" href="https://web.kultr.cc/"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#play"></use></svg>Try it in your browser</a>
-              <a class="btn" href="https://github.com/evropiani/Kultr_Android/releases/latest"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#smartphone"></use></svg>Get the Android app</a>
+              <a class="btn" href="#get"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#smartphone"></use></svg>Android &amp; iOS apps</a>
             </div>
             <p class="hero-note">
               <span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#shield-check"></use></svg>No account, no tracking</span>
@@ -228,7 +228,7 @@
             <h2 id="injekt-title">It doesn&rsquo;t lay one track over the next. <span class="tinted">It injects it.</span></h2>
             <p>
               Kultr decodes each track once and measures it: tempo and beat grid, musical key, loudness and brightness,
-              and where the intro ends and the outro begins. When one track is about to hand over, it plans the
+              and where the intro ends and the outro begins. As soon as a track starts, it plans the hand-over
               transition from those numbers &mdash; and shows you the plan.
             </p>
           </div>
@@ -366,7 +366,7 @@
               <ul>
                 <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"></use></svg>Background playback and a media notification</li>
                 <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"></use></svg>Lock-screen, Bluetooth and Android Auto</li>
-                <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"></use></svg>&ldquo;Play &hellip; on Kultr&rdquo; voice search</li>
+                <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"></use></svg>Cast and a home screen widget</li>
               </ul>
               <details class="fingerprint">
                 <summary>Signing certificate fingerprint</summary>
@@ -374,6 +374,21 @@
               </details>
               <div class="actions">
                 <a class="btn" href="https://github.com/evropiani/Kultr_Android/releases/latest"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#download"></use></svg>Download the APK</a>
+              </div>
+            </article>
+
+            <article class="get-card glass" data-reveal>
+              <div class="platforms"><span class="platform ios">iOS 17+</span></div>
+              <h3>On iPhone</h3>
+              <p class="lede">A native iPhone app with the same behaviour. It isn&rsquo;t on the App Store: you install it yourself with a free Apple ID.</p>
+              <ul>
+                <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"></use></svg>Background playback, lock screen and Control Center</li>
+                <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"></use></svg>AirPlay to a HomePod, Apple TV or any speaker</li>
+                <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"></use></svg>Re-signed every 7 days, automatically with SideStore or Sideloadly</li>
+              </ul>
+              <div class="actions">
+                <a class="btn" href="https://github.com/evropiani/Kultr_iOS/releases/latest"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#download"></use></svg>Download the IPA</a>
+                <a class="btn" href="https://github.com/evropiani/Kultr_iOS/blob/main/docs/INSTALL.md"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#book-open"></use></svg>How to install</a>
               </div>
             </article>
 
@@ -393,8 +408,7 @@
             </article>
           </div>
           <p class="get-foot" data-reveal>
-            A native iOS app is planned; until then Kultr installs from Safari as a web app.
-            Settings exported from one Kultr open in the other. <a href="https://github.com/evropiani/Kultr/blob/main/CHANGELOG.md">What&rsquo;s new</a>
+            Settings exported from one Kultr open in the others. <a href="https://github.com/evropiani/Kultr/blob/main/CHANGELOG.md">What&rsquo;s new</a>
           </p>
         </div>
       </section>
@@ -409,8 +423,8 @@
               <p class="data-lede">No analytics, no telemetry, no third-party requests, no fonts from anyone&rsquo;s CDN. This website keeps the same rule.</p>
             </div>
             <ul class="data-list">
-              <li><strong><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#lock"></use></svg>Your password stays yours</strong>Subsonic needs it to sign each request, so it&rsquo;s kept on the device and sent nowhere but your own server. On Android it&rsquo;s sealed with a key in the Keystore.</li>
-              <li><strong><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#database"></use></svg>The mirror lives with you</strong>The library, InjeKt analysis and listening history stay on the device. Settings &rarr; Reset Kultr erases the lot.</li>
+              <li><strong><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#lock"></use></svg>Your password stays yours</strong>Subsonic needs it to sign each request, so it&rsquo;s kept on the device and sent nowhere but your own server. The apps keep it in the Android Keystore or the iOS Keychain.</li>
+              <li><strong><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#database"></use></svg>The mirror lives with you</strong>The library and InjeKt analysis stay on the device; plays go to your Navidrome, so they match everywhere. Settings &rarr; Reset Kultr erases the lot.</li>
               <li><strong><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#folder-down"></use></svg>Downloads go where you say</strong>Inside the browser, or a folder you picked. A page can only write where you&rsquo;ve pointed it &mdash; by design.</li>
               <li><strong><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#file-json"></use></svg>Backups leave secrets out</strong>Settings export to a small JSON file. Passwords and usernames are never in it, and servers only if you ask.</li>
             </ul>
@@ -443,7 +457,7 @@
           <p>Open Kultr, point it at your Navidrome and press Sync my library. It only has to happen once.</p>
           <div class="hero-ctas">
             <a class="btn btn-primary" href="https://web.kultr.cc/"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#play"></use></svg>Try it in your browser</a>
-            <a class="btn" href="https://github.com/evropiani/Kultr_Android/releases/latest"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#smartphone"></use></svg>Get the Android app</a>
+            <a class="btn" href="#get"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#smartphone"></use></svg>Android &amp; iOS apps</a>
           </div>
         </div>
       </section>
@@ -454,7 +468,7 @@
         <div class="footer-grid">
           <div>
             <a class="brand" href="./"><img src="assets/img/logo-128.webp" alt="" width="30" height="30" />Kultr</a>
-            <p class="footer-about">A modern, minimalist client for Navidrome, for the web and Android. Free and open source.</p>
+            <p class="footer-about">A modern, minimalist client for Navidrome, for the web, Android and iOS. Free and open source.</p>
           </div>
           <div>
             <h4>Kultr</h4>
@@ -469,6 +483,7 @@
             <h4>Get it</h4>
             <ul>
               <li><a href="https://github.com/evropiani/Kultr_Android/releases/latest">Android APK</a></li>
+              <li><a href="https://github.com/evropiani/Kultr_iOS/releases/latest">iOS IPA</a></li>
               <li><a href="https://github.com/evropiani/Kultr/blob/main/docs/INSTALL.md">Install guide</a></li>
               <li><a href="https://github.com/evropiani/Kultr/blob/main/docs/FAQ.md">FAQ</a></li>
               <li><a href="https://github.com/evropiani/Kultr/blob/main/CHANGELOG.md">Changelog</a></li>

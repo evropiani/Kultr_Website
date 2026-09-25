@@ -48,6 +48,7 @@
 
   --web: #7dd3fc;
   --android: #86e0a0;
+  --ios: #c9b8ff;
 
   --r-xs: 8px;
   --r-sm: 12px;
@@ -536,6 +537,9 @@ kbd {
 }
 .platform.android::before {
   color: var(--android);
+}
+.platform.ios::before {
+  color: var(--ios);
 }
 .platform.planned {
   border-style: dashed;
@@ -1280,7 +1284,7 @@ p code,
 
 .get {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
 }
 .get-card {
@@ -1685,6 +1689,10 @@ p code,
   font-weight: 750;
   color: var(--android);
   border: 1px solid color-mix(in oklab, var(--android) 40%, transparent);
+}
+.ticks .note.ios {
+  color: var(--ios);
+  border-color: color-mix(in oklab, var(--ios) 40%, transparent);
 }
 .ticks .note.web {
   color: var(--web);

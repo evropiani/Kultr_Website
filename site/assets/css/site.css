@@ -815,7 +815,7 @@ kbd {
 .art.is-on {
   opacity: 1;
 }
-/* The demo library's covers: a diagonal two-tone with soft banding. */
+/* The sample library's covers: a diagonal two-tone with soft banding. */
 .cover {
   background:
     repeating-linear-gradient(

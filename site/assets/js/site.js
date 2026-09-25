@@ -98,7 +98,7 @@
 
   /* ---------------------------------------------------------- player -- */
 
-  // The app's demo library: short tracks, two-tone covers.
+  // The app's sample library: short tracks, two-tone covers.
   var TRACKS = [
     { title: 'Re-entry', artist: 'Nocturne Machine', album: 'Low Orbit', year: 2019, genre: 'Techno', bpm: 122, key: '7A', c1: '#4b63dc', c2: '#6b2bab', accent: '#7c8cff' },
     { title: 'Aurora I', artist: 'Signal Drift', album: 'Aurora Vanta', year: 2001, genre: 'Techno', bpm: 126, key: '8A', c1: '#df6e3a', c2: '#7f9b23', accent: '#d49a3c' },
@@ -106,7 +106,7 @@
     { title: 'Null Modem', artist: 'Signal Drift', album: 'Carrier Wave', year: 2024, genre: 'Electronic', bpm: 123, key: '9B', c1: '#8fd33e', c2: '#2ca74e', accent: '#6fcf57' },
     { title: 'Salt Flats', artist: 'The Glass Harbour', album: 'Salt and Static', year: 2017, genre: 'Ambient', bpm: 120, key: '10B', c1: '#2fb09e', c2: '#2c68b4', accent: '#3cb4c4' }
   ];
-  var DURATION = 30; // seconds, like the demo library's short tracks
+  var DURATION = 30; // seconds, like the sample library's short tracks
   var OUTRO = 20; // where the blend starts
   var BLEND = DURATION - OUTRO;
 
@@ -363,7 +363,7 @@
     if (!reduceMotion) setPlaying(true);
   }
 
-  /* Pages without the player still take their colour from the demo library:
+  /* Pages without the player still take their colour from the sample library:
      each feature section, as it scrolls into view, "plays" one of the covers. */
   if (!player) {
     paint(TRACKS[0], 0);

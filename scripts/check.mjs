@@ -13,7 +13,7 @@ for (const page of pages) {
   const html = readFileSync(join(SITE, page), 'utf8');
   const ids = new Set([...html.matchAll(/\sid="([^"]+)"/g)].map((m) => m[1]));
   for (const [, attr] of html.matchAll(/\s(?:href|src)="([^"]+)"/g)) {
-    if (/^(https?:|mailto:|data:)/.test(attr)) continue;
+    if (/^(https?:|mailto:|data:|sidestore:|altstore:)/.test(attr)) continue;
     const [path, frag] = attr.split('#');
     if (!path) {
       if (frag && !ids.has(frag)) problems.push(`${page}: no element with id "${frag}"`);

@@ -1,7 +1,8 @@
 # kultr.cc
 
 The website for [Kultr](https://github.com/evropiani/Kultr), a modern, minimalist
-Navidrome client for the web and [Android](https://github.com/evropiani/Kultr_Android).
+Navidrome client for the web, [Android](https://github.com/evropiani/Kultr_Android)
+and [iOS](https://github.com/evropiani/Kultr_iOS).
 
 It is plain HTML, CSS and JavaScript: no build step, no framework, no web fonts
 and no third-party requests — the same rule the app keeps.

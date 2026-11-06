@@ -1,0 +1,338 @@
+/* kultr.cc — Cream, the look of the Kultr apps: cream pages, warm black text,
+   one orange; warm charcoal when the device is in dark mode. */
+
+:root {
+  color-scheme: light dark;
+  --bg: #f6f0e5;
+  --paper: #fffcf6;
+  --sand: #eadfcc;
+  --sand-hover: #e2d4bd;
+  --ink: #1f1a14;
+  --ink-2: #5a5046;
+  --ink-3: #6e6255;
+  --line: rgb(31 26 20 / 0.12);
+  --accent: #b24c1d;
+  --on-accent: #fffcf6;
+  --shadow: 0 18px 40px -22px rgb(31 26 20 / 0.45);
+  --font: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Inter, system-ui, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1c1a17;
+    --paper: #26231f;
+    --sand: rgb(243 237 226 / 0.1);
+    --sand-hover: rgb(243 237 226 / 0.15);
+    --ink: #f3ede2;
+    --ink-2: rgb(243 237 226 / 0.72);
+    --ink-3: rgb(243 237 226 / 0.58);
+    --line: rgb(243 237 226 / 0.1);
+    --accent: #ff7a3d;
+    --on-accent: #1c1a17;
+    --shadow: 0 18px 40px -22px rgb(0 0 0 / 0.8);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink-2);
+  font: 17px/1.6 var(--font);
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  color: var(--ink);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+p {
+  margin: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+.wrap {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding-block: 18px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: auto;
+  color: var(--ink);
+  font-size: 19px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.brand img {
+  width: 32px;
+  height: 32px;
+}
+
+.top a:not(.brand) {
+  color: var(--ink-2);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.top a:not(.brand):hover {
+  color: var(--accent);
+}
+
+.top svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* Buttons: sand with an orange label, the leading one solid orange. */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 20px;
+  border-radius: 999px;
+  background: var(--sand);
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background: var(--sand-hover);
+}
+
+.btn.primary {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.btn.primary:hover {
+  filter: brightness(1.08);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Hero */
+
+.hero {
+  padding: 48px 0 56px;
+  text-align: center;
+}
+
+.hero .logo {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 26px;
+  filter: drop-shadow(var(--shadow));
+}
+
+.hero h1 {
+  font-size: clamp(2.4rem, 7vw, 4rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 18px auto 30px;
+  font-size: 19px;
+}
+
+.hero .actions {
+  justify-content: center;
+}
+
+/* Screenshots */
+
+.phones {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding-bottom: 8px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.phones img {
+  flex: 0 0 auto;
+  width: 240px;
+  height: auto;
+  border-radius: 32px;
+  box-shadow: var(--shadow);
+  scroll-snap-align: center;
+}
+
+.browser {
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+/* Sections */
+
+section {
+  padding: 72px 0 0;
+}
+
+section > h2 {
+  margin-bottom: 28px;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px;
+  border-radius: 20px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+}
+
+.card h3 {
+  font-size: 19px;
+}
+
+.card .actions {
+  margin-top: auto;
+  padding-top: 10px;
+}
+
+.tag {
+  color: var(--ink-3);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.small {
+  color: var(--ink-3);
+  font-size: 15px;
+}
+
+.small a {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.note {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.note a {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 88px;
+  padding: 28px 0 40px;
+  border-top: 1px solid var(--line);
+  color: var(--ink-3);
+  font-size: 15px;
+}
+
+footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: var(--ink-2);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--accent);
+}
+
+/* Not found */
+
+.lost {
+  min-height: 70vh;
+  display: grid;
+  place-content: center;
+  gap: 18px;
+  justify-items: center;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .top {
+    gap: 14px;
+  }
+  .hero {
+    padding-top: 28px;
+  }
+  .phones {
+    justify-content: flex-start;
+  }
+  .phones img {
+    width: 200px;
+  }
+}
